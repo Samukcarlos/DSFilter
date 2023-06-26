@@ -8,4 +8,12 @@ header{
 }
 .dsf-product{
     padding: 0 0 0 950px;
+    display: flex;
+    align-items: center;
 }
+.dsf-icon{
+    padding: 6px 6px 0 0;
+    display: flex;
+    align-items: center;
+}
+

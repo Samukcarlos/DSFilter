@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import './styles.css';
 
+type Props ={
+  onNewValue?: Function;
+}
+
 type FormData = {
   min?: number;
   max?: number;
 }
 
- export default function Filter() {
+ export default  function Filter({onNewValue}: Props) {
 
   const [formData, setFormData] = useState<FormData>({
     min: undefined,
@@ -21,10 +25,16 @@ type FormData = {
 
   function handleSubmit(event: any){
     event.preventDefault();
-    console.log(formData.min || 0)
-    console.log(formData.max || Number.MAX_VALUE)
+    console.log(formData.min || 0);
+    console.log(formData.max || Number.MAX_VALUE);
+    if(onNewValue){
+    onNewValue(formData.max);
+    onNewValue(formData.min);
+       
+    }
+
   }
-  
+
   return (
     <>
     <section>
@@ -53,8 +63,8 @@ type FormData = {
     </div>
     <div className='dsf-input2'>
         <button
+        type='submit'
          className='dsf-button'
-         
          >Filtrar</button>         
     </div>
     </form>

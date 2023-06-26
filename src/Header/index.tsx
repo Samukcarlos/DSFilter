@@ -1,3 +1,4 @@
+import IconNumber from '../Component';
 import './styles.css';
 
  export default function Header() {
@@ -6,8 +7,14 @@ import './styles.css';
     <>
     <header>
       <h1>DSFilter</h1>
-      <h3 className='dsf-product'>produto(s)</h3>
-    </header>
+      
+      <div className='dsf-product'>
+        <div className='dsf-icon'>
+      <IconNumber />
+      </div>
+      <h3 >produto(s)</h3>
+      </div>
+      </header>
     </>
   )
 }

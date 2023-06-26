@@ -1,0 +1,31 @@
+.dsf-filterBody{
+    background-color: #fff;
+    border-radius:5px ;
+    
+    height: 200px;  
+   
+      
+}
+
+.dsf-button{
+    color: #fff;
+    background-color:#55BC04 ;
+    border-radius:5px ;
+    width: 200px;
+    height: 40px;
+  
+}
+.section-filter{
+    padding: 10px 180px 0 190px;
+    
+}
+.dsf-input{
+    padding: 20px 0 0 10px;
+    display: flex;
+    border-radius: 5px; 
+                 
+}
+.dsf-input2{
+    padding: 20px 0 0 10px;
+    display: flex;
+}
